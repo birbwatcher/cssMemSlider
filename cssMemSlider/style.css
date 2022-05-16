@@ -6,12 +6,6 @@ p {
     margin: 0;
 }
 
-.slider {
-    /* height: 50%; */
-    height: 600px;
-    width: 600px;
-}
-
 .wrapper {
     display: flex;
     justify-content: center;
@@ -23,8 +17,7 @@ p {
 }
 
 .slide img {
-    max-width: 600px;
-    height: 400px;
+    height: 500px;
     border-radius: 5%;
 }
 
@@ -75,7 +68,7 @@ p {
 
 .smooth-animation {
     opacity: 0;
-    animation: smooth 2s forwards;
+    animation: smooth 0.5s forwards;
 }
 
 @keyframes smooth {

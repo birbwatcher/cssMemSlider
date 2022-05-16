@@ -83,9 +83,9 @@ function addAnimation() {
     document.getElementsByClassName('description')[0].classList.add('smooth-animation');
     document.getElementsByClassName('slide')[0].classList.add('smooth-animation');
     setTimeout(function(){document.getElementsByClassName('description')[0].classList.remove('smooth-animation');
-}, 1000);
+}, 500);
     setTimeout(function(){document.getElementsByClassName('slide')[0].classList.remove('smooth-animation');
-}, 1000);
+}, 500);
 }
 
 toggle(control1, bullet1, 1);
