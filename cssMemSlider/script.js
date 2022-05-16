@@ -11,6 +11,7 @@ let bullet4 = document.getElementsByClassName('bullet')[3];
 let counter = 1;
 checkCounter(counter);
 
+
 function checkCounter(counter) {
     if (counter === 1) {
         clearStatus(bullet2);
@@ -18,7 +19,7 @@ function checkCounter(counter) {
         clearStatus(bullet4);
         document.getElementsByClassName('slide')[0].innerHTML = '<img src="images/1.jpg" alt="Hola"></img>';
         document.getElementsByClassName('description')[0].innerHTML = '<p>I dont want to be a front-end developer</p>';
-
+        addAnimation();
     }
     if (counter === 2) {
         clearStatus(bullet1);
@@ -26,7 +27,7 @@ function checkCounter(counter) {
         clearStatus(bullet4);
         document.getElementsByClassName('slide')[0].innerHTML = '<img src="images/2.jpg" alt="Hola"></img>';
         document.getElementsByClassName('description')[0].innerHTML = '<p>We are here</p>';
-
+        addAnimation();
     }
     if (counter === 3) {
         clearStatus(bullet1);
@@ -34,7 +35,7 @@ function checkCounter(counter) {
         clearStatus(bullet4);
         document.getElementsByClassName('slide')[0].innerHTML = '<img src="images/3.jpg" alt="Hola"></img>';
         document.getElementsByClassName('description')[0].innerHTML = '<p>Dreaming about my own project</p>';
-
+        addAnimation();
     }
     if (counter === 4) {
         clearStatus(bullet1);
@@ -42,8 +43,7 @@ function checkCounter(counter) {
         clearStatus(bullet3);
         document.getElementsByClassName('slide')[0].innerHTML = '<img src="images/4.jpg" alt="Hola"></img>'
         document.getElementsByClassName('description')[0].innerHTML = '<p>Other programmers, and you :)</p>';
-
-
+        addAnimation();
     }
 }
 
@@ -77,6 +77,15 @@ function toggle (controlName, bulletName, counterNum ) {
         }
         bulletName.classList.remove('bullet-hover')
     }
+}
+
+function addAnimation() {
+    document.getElementsByClassName('description')[0].classList.add('smooth-animation');
+    document.getElementsByClassName('slide')[0].classList.add('smooth-animation');
+    setTimeout(function(){document.getElementsByClassName('description')[0].classList.remove('smooth-animation');
+}, 1000);
+    setTimeout(function(){document.getElementsByClassName('slide')[0].classList.remove('smooth-animation');
+}, 1000);
 }
 
 toggle(control1, bullet1, 1);
