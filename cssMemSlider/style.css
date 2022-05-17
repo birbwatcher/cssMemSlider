@@ -62,8 +62,14 @@ p {
     transform: scale(1.1);
 }
 
+#slide1:checked ~ .slider-content{
+    margin-left: 0%;
+    transition:all 0.5s;
+}
+
 #slide2:checked ~ .slider-content{
     margin-left: -100%;
+    transition:all 0.5s;
 }
 
 #slide1:checked ~ .about .description .slide1-description, 
@@ -91,10 +97,12 @@ p {
 
 #slide3:checked ~ .slider-content{
     margin-left: -200%;
+    transition:all 0.5s;
 }
 
 #slide4:checked ~ .slider-content{
     margin-left: -300%;
+    transition:all 0.5s;
 }
 
 .slide1-description, .slide2-description, .slide3-description, .slide4-description{
