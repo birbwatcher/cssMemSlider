@@ -104,9 +104,12 @@ p {
 }
 
 .slide1-description, .slide2-description, .slide3-description, .slide4-description{
-    /*display: none;*/
     font-size: 0;
     opacity: 0;
+}
+
+.pullrequest {
+    margin-top: 1rem;
 }
 
 @media (max-width: 767.9px) {
