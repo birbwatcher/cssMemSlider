@@ -22,18 +22,12 @@ p {
     display: flex;
 }
 
-/* .slider-content .slide {
-    width: 25%;
-} */
-
 .slide img{
-    /* width: 80%; */
     height: auto;
 }
 
 .slider input{
     display: none;
-    /* visibility: hidden; */
 }
 
 .about {
@@ -59,7 +53,7 @@ p {
 .bullet:hover {
     background-color:white;
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition:all 0.3s;
 }
 
@@ -77,9 +71,9 @@ p {
 #slide2:checked ~ .about .description .slide2-description,
 #slide3:checked ~ .about .description .slide3-description,
 #slide4:checked ~ .about .description .slide4-description{
-    display: inline-block;
+    font-size: 16px;
     opacity: 1;
-    transition:all 0.5s;
+    transition:font-size 0.1s linear 0s, opacity 0.5s linear 0.1s;
 }
 
 #slide1:checked ~ .about .bullet1,
@@ -109,7 +103,8 @@ p {
 }
 
 .slide1-description, .slide2-description, .slide3-description, .slide4-description{
-    display: none;
+    /*display: none;*/
+    font-size: 0;
     opacity: 0;
 }
 
