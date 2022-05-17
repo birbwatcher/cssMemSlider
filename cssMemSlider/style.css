@@ -1,0 +1,172 @@
+body {
+    background-color: rgb(239, 239, 239);
+}
+
+p {
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    max-width: 500px;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider-content {
+    width: 400%;
+    display: flex;
+}
+
+.slide img{
+    height: auto;
+    width: 100%;
+}
+
+.slider input{
+    display: none;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+}
+
+.bulletbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.bullet {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+    background-color:cadetblue;
+    margin: 0 3px;
+}
+
+.bullet:hover {
+    background-color:white;
+    opacity: 1;
+    transform: scale(1.1);
+    transition:all 0.3s;
+}
+
+#slide1:checked ~ .slider-content{
+    margin-left: 0%;
+    transition:all 0.5s;
+}
+
+#slide2:checked ~ .slider-content{
+    margin-left: -100%;
+    transition:all 0.5s;
+}
+
+#slide1:checked ~ .about .description .slide1-description, 
+#slide2:checked ~ .about .description .slide2-description,
+#slide3:checked ~ .about .description .slide3-description,
+#slide4:checked ~ .about .description .slide4-description{
+    font-size: 1em;
+    opacity: 1;
+    transition:font-size 0.1s linear 0s, opacity 0.5s linear 0.1s;
+}
+
+#slide1:checked ~ .about .bullet1,
+#slide2:checked ~ .about .bullet2,
+#slide3:checked ~ .about .bullet3,
+#slide4:checked ~ .about .bullet4{
+    border: 2px solid cadetblue;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+#slide1:hover ~ .about .bullet1,
+#slide2:hover ~ .about .bullet2,
+#slide3:hover ~ .about .bullet3,
+#slide4:hover ~ .about .bullet4{
+    background-color: white;
+}
+
+#slide1:checked:hover ~ .about .bullet1,
+#slide2:checked:hover ~ .about .bullet2,
+#slide3:checked:hover ~ .about .bullet3,
+#slide4:checked:hover ~ .about .bullet4{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+
+#slide3:checked ~ .slider-content{
+    margin-left: -200%;
+    transition:all 0.5s;
+}
+
+#slide4:checked ~ .slider-content{
+    margin-left: -300%;
+    transition:all 0.5s;
+}
+
+.slide1-description, .slide2-description, .slide3-description, .slide4-description{
+    font-size: 0;
+    opacity: 0;
+}
+
+.pullrequest {
+    margin-top: 1rem;
+}
+
+@media (max-width: 767.9px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .controls {
+        justify-content: center;
+        order: 0;
+    }
+
+    .description {
+        order: 1;
+    }
+
+    .controls {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 767.9px) {
+
+    .about {
+        flex-direction: column;
+    }
+
+    .controls {
+        justify-content: center;
+        order: 0;
+    }
+
+    .description {
+        order: 1;
+    }
+
+    .controls {
+        margin-bottom: 15px;
+    }
+
+
+} */
