@@ -18,12 +18,13 @@ p {
 }
 
 .slider-content {
-    width: 500%;
+    width: 400%;
     display: flex;
 }
 
 .slide img{
     height: auto;
+    width: 100%;
 }
 
 .slider input{
@@ -33,7 +34,7 @@ p {
 .about {
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 
 .controls {
@@ -71,7 +72,7 @@ p {
 #slide2:checked ~ .about .description .slide2-description,
 #slide3:checked ~ .about .description .slide3-description,
 #slide4:checked ~ .about .description .slide4-description{
-    font-size: 16px;
+    font-size: 1rem;
     opacity: 1;
     transition:font-size 0.1s linear 0s, opacity 0.5s linear 0.1s;
 }
@@ -123,80 +124,8 @@ p {
     }
 
     .controls {
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
     }
-}
-
-/* .slider {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400%;
-    height: 100%;
-}
-
-.slider-content {
-    display: flex;
-}
-
-.slide {
-    display: flex;
-    width: 25%;    
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-}
-
-
-.control {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-}
-
-.controls {
-    display: flex;
-    align-items: center;
-}
-
-.bullet {
-    height: 15px;
-    width: 15px;
-    border-radius: 100%;
-}
-
-.bullet-rest {
-    background-color:cadetblue;
-}
-
-.bullet-hover {
-    background-color:white;
-}
-
-.bullet-active {
-    border: 2px solid cadetblue;
-    box-sizing: border-box;
-}
-
-.bullet-active-hover {
-    border: 2px solid white;
-    box-sizing: border-box;
-}
-
-.about {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-}
-
-.smooth-animation {
-    opacity: 0;
-    animation: smooth 0.5s forwards;
 }
 
 @media (max-width: 767.9px) {
