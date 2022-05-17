@@ -11,13 +11,120 @@ p {
     justify-content: center;
 }
 
+.slider {
+    max-width: 500px;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider-content {
+    width: 500%;
+    display: flex;
+}
+
+/* .slider-content .slide {
+    width: 25%;
+} */
+
+.slide img{
+    /* width: 80%; */
+    height: auto;
+}
+
+.slider input{
+    display: none;
+    /* visibility: hidden; */
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+}
+
+.bullet {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color:cadetblue;
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+.bullet:hover {
+    background-color:white;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#slide2:checked ~ .slider-content{
+    margin-left: -100%;
+}
+
+#slide1:checked ~ .about .description .slide1-description, 
+#slide2:checked ~ .about .description .slide2-description,
+#slide3:checked ~ .about .description .slide3-description,
+#slide4:checked ~ .about .description .slide4-description{
+    display: inline-block;
+}
+
+#slide3:checked ~ .slider-content{
+    margin-left: -200%;
+}
+
+#slide4:checked ~ .slider-content{
+    margin-left: -300%;
+}
+
+.slide1-description, .slide2-description, .slide3-description, .slide4-description{
+    display: none;
+}
+
+
+@media (max-width: 767.9px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .controls {
+        justify-content: center;
+        order: 0;
+    }
+
+    .description {
+        order: 1;
+    }
+
+    .controls {
+        margin-bottom: 15px;
+    }
+}
+
+/* .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400%;
+    height: 100%;
+}
+
+.slider-content {
+    display: flex;
+}
+
 .slide {
     display: flex;
-    justify-content: center;
+    width: 25%;    
 }
 
 .slide img {
-    height: 500px;
+    width: 100%;
+    height: 100%;
     border-radius: 5%;
 }
 
@@ -26,7 +133,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 0 2px 0; */
     width: 20px;
     height: 20px;
 }
@@ -71,11 +177,6 @@ p {
     animation: smooth 0.5s forwards;
 }
 
-@keyframes smooth {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-
 @media (max-width: 767.9px) {
 
     .about {
@@ -96,4 +197,4 @@ p {
     }
 
 
-}
+} */
