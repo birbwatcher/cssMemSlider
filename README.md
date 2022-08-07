@@ -1,3 +1,3 @@
 # cssMemSlider
 
-Deploy: https://birbwatcher.github.io/cssMemSlider/cssMemSlider/
+Deploy: https://birbwatcher.github.io/cssMemSlider/
